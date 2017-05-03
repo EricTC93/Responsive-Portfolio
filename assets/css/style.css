@@ -4,7 +4,6 @@ body {
 	color: #777777;
 	margin: auto;
 	overflow: auto;
-	min-width: 1000px;
 }
 
 h1, h2, h3, h4 {
@@ -27,14 +26,14 @@ h1 {
 	text-align: center;
 	padding: 15px 10px;
 	float: left;
-	margin: 0px 0px 0px 49px;
+	margin: 0px 0px 0px 20px;
 }
 
 nav {
 	text-align: center;
 	padding: 22.5px 10px 7.5px 10px;
 	float: right;
-	margin: 0px 49px 0px 0px;
+	margin: 0px 20px 0px 0px;
 }
 
 nav>a {
@@ -44,14 +43,14 @@ nav>a {
 }
 
 div.content {
-	width: 960px;
+	max-width: 960px;
 	margin: 20px auto;
 	overflow: auto;
 }
 
 section {
-	width: 650px;
-	padding: 7px;
+	max-width: 650px;
+	padding: 5px;
 	margin: 5px 5px 5px 0px;
 	float: left;
 	border: 1px solid #cccccc;
@@ -66,7 +65,7 @@ h2 {
 	color: #4aaaa5;
 	border-bottom: 5px solid #dddddd;
 	padding-bottom: 20px;
-	width: 600px;
+	max-width: 600px;
 	margin: 20px auto;
 }
 
@@ -95,32 +94,30 @@ button {
 
 section>div {
 	height: 200px;
-	background-color: gray;
 	margin: 0px 7px 20px 7px; 
+	background: gray;
 }
 
 div.left {
 	height: 200px;
 	width: 200px;
-	background-color: red;
 	float: left;
-	margin-left: 100px;
+	margin-left: 85px;
 }
 
 div.right {
 	height: 200px;
 	width: 200px;
-	background-color: blue;
 	float: right;
-	margin-right: 100px;
+	margin-right: 85px;
 }
 
 aside {
 	width: 270px;
 	height: 150px;
 	text-align: center;
-	float: right;
-	padding: 20px 5px;
+	float: left;
+	padding: 20px 0px;
 	margin: 5px 0px 5px 5px;
 	border: 1px solid #cccccc;
 }
@@ -166,7 +163,59 @@ h5 {
 	width: 200px;
 }
 
+@media screen and (max-width: 980px) {
+	
+	section {
+		
+	}
+
+	aside {
+		
+	}
+
+	section>img {
+		float: none;
+		display: block;
+		margin: 10px auto;
+	}
+
+	p {
+		clear: both;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	aside {
+		clear: both;
+	}
+	
+}
+
+@media screen and (max-width: 640px) {
+
+	h1 {
+		float: none;
+		margin: auto;
+		padding: 20px 0px;
+	}
+
+	nav {
+		float: none;
+		clear: both;
+		padding: 25px 0px 0px 0px;
+		margin: auto;
+	}
+
+	aside {
+		width: 100%;
+	}
+	
+}
+
 .clear {
 	clear: both;
 }
+
 
