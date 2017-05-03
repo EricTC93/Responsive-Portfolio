@@ -54,6 +54,7 @@ section {
 	margin: 5px 5px 5px 0px;
 	float: left;
 	border: 1px solid #cccccc;
+	overflow: auto;
 }
 
 section>img {
@@ -165,9 +166,13 @@ h5 {
 }
 
 @media screen and (max-width: 980px) {
+
+	div.content {
+		max-width: 696px;
+	}
 	
 	section {
-		margin: auto;
+
 	}
 
 	aside {
@@ -186,8 +191,8 @@ h5 {
 
 	div.left, div.right {
 		clear: both;
-		float: left;
-		margin: 10px;
+		float: none;
+		margin: 0px 100px 20px 100px;
 	}
 
 }
@@ -196,6 +201,7 @@ h5 {
 
 	section {
 		float: none;
+		margin: 5px auto;
 	}
 
 	div.left {
@@ -213,7 +219,9 @@ h5 {
 	}
 
 	aside {
+		float: none;
 		clear: both;
+		margin-left: 0px;
 	}
 	
 }
@@ -233,10 +241,15 @@ h5 {
 		margin: auto;
 	}
 
+	section {
+		margin: 5px auto;
+		max-width: 300px;
+	}
+
 	div.left, div.right {
 		clear: both;
-		float: left;
-		margin: 10px;
+		float: none;
+		margin: 0px auto 20px auto;
 	}
 
 	aside {
