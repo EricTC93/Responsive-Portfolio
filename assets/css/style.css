@@ -95,21 +95,22 @@ button {
 section>div {
 	height: 200px;
 	margin: 0px 7px 20px 7px; 
-	background: gray;
 }
 
 div.left {
 	height: 200px;
 	width: 200px;
 	float: left;
-	margin-left: 85px;
+	margin-left: 75px;
+	margin-right: 25px;
 }
 
 div.right {
 	height: 200px;
 	width: 200px;
 	float: right;
-	margin-right: 85px;
+	margin-left: 25px;
+	margin-right: 75px;
 }
 
 aside {
@@ -166,11 +167,11 @@ h5 {
 @media screen and (max-width: 980px) {
 	
 	section {
-		
+		margin: auto;
 	}
 
 	aside {
-		
+
 	}
 
 	section>img {
@@ -183,9 +184,33 @@ h5 {
 		clear: both;
 	}
 
+	div.left, div.right {
+		clear: both;
+		float: left;
+		margin: 10px;
+	}
+
 }
 
 @media screen and (max-width: 768px) {
+
+	section {
+		float: none;
+	}
+
+	div.left {
+		float: left;
+		margin-left: 75px;
+		margin-right: 25px;
+		clear: none;
+	}
+
+	div.right {
+		float: right;
+		margin-left: 25px;
+		margin-right: 75px;
+		clear: none;
+	}
 
 	aside {
 		clear: both;
@@ -206,6 +231,12 @@ h5 {
 		clear: both;
 		padding: 25px 0px 0px 0px;
 		margin: auto;
+	}
+
+	div.left, div.right {
+		clear: both;
+		float: left;
+		margin: 10px;
 	}
 
 	aside {
