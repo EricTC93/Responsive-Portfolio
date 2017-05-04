@@ -217,7 +217,7 @@ h5 {
 
 	div.left {
 		float: left;
-		margin-left: 75px;
+		margin-left: 65px;
 		margin-right: 25px;
 		clear: none;
 	}
@@ -225,7 +225,7 @@ h5 {
 	div.right {
 		float: right;
 		margin-left: 25px;
-		margin-right: 75px;
+		margin-right: 65px;
 		clear: none;
 	}
 
