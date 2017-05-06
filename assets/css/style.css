@@ -247,6 +247,10 @@ h5 {
 
 @media screen and (max-width: 640px) {
 
+	header {
+		position: static;
+	}
+
 	h1 {
 		float: none;
 		margin: auto;
